@@ -9,6 +9,6 @@ Hojas de estilo en sass  junto con framework materializecss
 
 manejador de tareas en gulp 
 
-uso de livea reload para desarrollo asi como tara para compilado de hojas de estilo y archivos javascript.
+uso de livea reload para desarrollo asi como tarea para compilado de hojas de estilo y archivos javascript.
 
 
