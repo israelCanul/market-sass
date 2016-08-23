@@ -1,0 +1,178 @@
+
+
+
+#special-gifts{
+  .wrap-contenido{
+    width: 100%;
+    @include tablet{
+      position: relative;
+      width: 100%;
+    };
+    @include desktop{
+      position: relative;
+      width: 80%;
+      left: 10%;
+    };
+    .title{
+      h1{
+        font-size:2rem;
+        text-transform: uppercase;
+        color: $naranja-diseno;
+        font-weight:6;
+        font-family: $oswald;
+        text-align: center;
+        margin-top:20px;
+        margin-bottom:20px;
+      }
+      h2{
+
+      }
+      h3{
+        margin-top:0px;
+
+        font-size:1.5rem;
+        text-transform: uppercase;
+        color: $naranja-diseno;
+        font-weight:300;
+        font-family: $oswald;
+        text-align: center;
+        letter-spacing:2;
+      }
+    }
+   .text-title{
+     p{
+       color: $gris-texto;
+       font-size: 1.1rem;
+       text-align: justify;
+     }
+   }
+   .certificados{
+     h1{
+       font-size:1.5rem;
+       text-transform: uppercase;
+       color: $naranja-diseno;
+       font-weight:500;
+       font-family: $oswald;
+       text-align: center;
+       margin-top: 20px;
+     }
+     .certificado{
+       margin-top: 15px;
+       text-align: center;
+       img{
+         text-align: center;
+       }
+       a{
+         &.btn{
+           background-color:$naranja-diseno;
+         }
+         margin-top:5px;
+         text-align: center;
+         text-transform: uppercase;
+
+       }
+     }
+     p{
+       margin-top: 25px;
+       color: $gris-texto;
+       font-size: 1.1rem;
+       text-align: justify;
+       span{
+         color: $naranja-diseno;
+         font-weight:600;
+       }
+     }
+   }
+   .productos{
+     margin-top: 20px;
+     h1{
+       font-size:1.5rem;
+       text-transform: uppercase;
+       color: $naranja-diseno;
+       font-weight:500;
+       font-family: $oswald;
+       text-align: center;
+       margin-top: 20px;
+
+     }
+     p{
+       margin-top: 25px;
+       color: $gris-texto;
+       font-size: 1.1rem;
+       text-align: justify;
+     }
+     strong{
+       display: block;
+       color: $naranja-diseno;
+       font-size: 1.2rem;
+     }
+     .collection-item{
+       h5{
+         font-family: $oswald;
+         color: $negro;
+         text-align: center;
+       }
+       .categoria-productos{
+         color: $gris-texto;
+         text-align: center;
+       }
+       .secondary-content{
+         i{
+           color: $naranja-diseno;
+         }
+       }
+     }
+     .wrap-product-items{
+         &.column{
+             .product-item{
+               transition: width 0.4s ease-in-out;
+               position: relative;
+               width:100%;
+               margin-right:0%;
+               padding:10px 0px;
+               float: left;
+               transition: all 0.6s ease-in-out;
+               @include itemvertical();
+               @include tablet-s{
+                 width:49%;
+                 margin-right:1%;
+               };
+               @include tablet{
+                 width:30%;
+                 margin-right:3%;
+               };
+           }
+         }
+         &.list{
+           .product-item{
+             transition: all 0.6s ease-in-out;
+             width:96%;
+             transition: width 0.4s ease-in-out;
+             margin-left:2%;
+             margin-right:2%;
+             padding:10px 0px;
+             position: relative;
+             @include itemhorizontal();
+
+           }
+
+         }
+     }
+     .wrap-items-categoria{
+       transition: all 0.6s ease-in-out;
+       display:none;
+       &.active{
+         display: block !important;
+       }
+     }
+   }
+
+
+  }
+  .wrap-certificados{
+    background-repeat: repeat-x;
+    background-image: url(http://www.royalresorts.com/wp-content/uploads/2016/02/bg_cakes.png?fit=25%2C197);
+    background-attachment: scroll;
+    background-position: top left;
+   }
+}

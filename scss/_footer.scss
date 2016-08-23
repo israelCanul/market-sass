@@ -1,0 +1,93 @@
+#sub_menu{
+  height: auto;
+    position: relative;
+    width: 100%;
+    border-bottom:  1px solid $gris-borde;
+    -webkit-perspective: 1000px;
+    -webkit-backface-visibility: hidden;
+    font-size: 13px;
+    line-height: 1.65em;
+    height: auto!important;
+    background: url(https://www.royalresorts.com/wp-content/uploads/2016/02/bg-footer.png) top left repeat-x #f9f9f9;
+    .container{
+      width: 100%;
+      ul{
+        text-align: center;
+        li{
+          padding: 15px 0;
+          display: inline-block;
+          position: relative;
+          margin: 0;
+          a{
+            padding: 0px 10px 0px 12px;
+            display: block;
+            color: black;
+            i{
+              margin-left:0px;
+              margin-right:0px;
+              color:$naranja-diseno;
+              font-size: 1.5rem;
+            }
+
+
+          }
+        }
+      }
+    }
+
+}
+footer{
+  .container{
+    width:100%;
+    padding-left:10px;
+    padding-right: 10px;
+  }
+  background-color: $gris !important;
+  .widget{
+    h3{
+      font-family: $oswald;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 1.1em;
+      color: $naranja-diseno;
+      margin-bottom:2px;
+      text-align: left;
+    }
+    .menu{
+      a{
+        color: #404041;
+      }
+    }
+    .textwidget{
+
+      ul{
+        height: 35px;
+        z-index: 150;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        background: transparent;
+        li{
+          @include clearfix;
+          height: 100%;
+          float: left;
+          padding: 0;
+          display: block;
+          width: 35px;
+          a{
+            transition: background-color 0.4s ease-in-out;
+            color: $gris-borde;
+            padding:5px;
+            font-size: 1.5rem;
+            &:hover{
+              background-color: $naranja-diseno;
+              color: $blanco;
+            }
+          }
+        }
+      }
+
+    }
+  }
+}

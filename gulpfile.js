@@ -38,6 +38,15 @@ gulp.task('handlebars', function() {
     "order-confirmation" : {
       "title" : "Order Confirmation"
     },
+    "special-gifts" : {
+      "title" : "Gift Certificates"
+    },
+    "rentals" : {
+      "title" : "Rentals"
+    },
+    "giftcertificates" : {
+      "title" : "Gift Certificates"
+    },
     };
 
     gulp.src('./pages/sections/*.hbs')

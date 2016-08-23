@@ -110,12 +110,6 @@ var ContainerMenuPrin = React.createClass({
 					        <li><a href="https://www.royalresorts.com/special-offers/">BLOG</a></li>
 					        <li><a href="https://www.royalresorts.com/special-offers/">VACATIONS SPECIALS</a></li>
 					    </ul>
-              <ul className="side-nav" id="mobile-departaments">
-                <li><a href="sass.html">Sass</a></li>
-                <li><a href="badges.html">Components</a></li>
-                <li><a href="collapsible.html">Javascript</a></li>
-                <li><a href="mobile.html">Mobile</a></li>
-              </ul>
 				</div>
             )
     }

@@ -1,0 +1,152 @@
+#index.wrap-contenido{
+  width: 100%;
+  @include tablet{
+    position: relative;
+    width: 100%;
+  };
+  @include desktop{
+    position: relative;
+    width: 80%;
+    left: 10%;
+  };
+  .banners{
+    .hours{
+        background-color: $gris;
+      h4{
+        font-size: 1.2rem;
+        font-weight: 700;
+      }
+      ul{
+        padding:5px 10px;
+        li{
+          font-size:1rem;
+          list-style: circle;
+        }
+      }
+    }
+    .wrapcarousel{
+
+
+      position: relative;
+      @include desktop{
+
+        width: 80%;
+        left:10%;
+      };
+    }
+  }
+  .content-page{
+    .row{
+      .menu-gallery{
+        nav{
+          background-color: $gris;
+          color:$gris-borde;
+          a{
+            color: $negro;
+            padding-left:10px;
+            font-size: 1.4rem;
+            font-family: $oswald;
+
+            @include tablet{
+              font-size: 1rem;
+            };
+          }
+          ul.left.contenedor-opciones{
+            display: none;
+            &.active{
+              display: none !important;
+              @include tablet{
+                display: block !important;
+              };
+            }
+            li{
+              a{
+                font-size: 0.8rem;
+                @include desktop{
+                  font-size: 0.9rem;
+                };
+              }
+            }
+          }
+          ul.right{
+            li{
+              a{
+                color: $gris-borde;
+                &.active{
+                  background-color: $azul-fuerte-diseno;
+                  color:$blanco;
+                }
+                i{
+                  &.columnas_icon{
+
+                  }
+                }
+
+              }
+            }
+          }
+          input{
+            float: right;
+            width:50%;
+            margin:10px;
+            height:30px;
+            border:1px solid $gris-borde;
+            background-color: $gris;
+            color: $negro;
+            font-size: 1rem;
+            @include tablet{
+              font-size: 1.1rem;
+              margin: 17px;
+              width:80%;
+            };
+          }
+        }
+      }
+    }
+    .wrap-product-items{
+        &.column{
+
+            .product-item{
+              transition: width 0.4s ease-in-out;
+              position: relative;
+              width:100%;
+              margin-right:0%;
+              padding:10px 0px;
+              float: left;
+              transition: all 0.6s ease-in-out;
+              @include itemvertical();
+              @include tablet-s{
+                width:49%;
+                margin-right:1%;
+              };
+              @include tablet{
+                width:30%;
+                margin-right:3%;
+              };
+          }
+        }
+        &.list{
+          .product-item{
+            transition: all 0.6s ease-in-out;
+            width:96%;
+            transition: width 0.4s ease-in-out;
+            margin-left:2%;
+            margin-right:2%;
+            padding:10px 0px;
+            position: relative;
+            @include itemhorizontal();
+
+          }
+
+        }
+    }
+
+    .brands{
+      h5{
+        padding:10px 5px;
+        border-top: 1px solid $gris;
+                  border-bottom:  1px solid $gris;
+      }
+    }
+  }
+}

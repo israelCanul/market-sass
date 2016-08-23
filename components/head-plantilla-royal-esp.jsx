@@ -1,5 +1,5 @@
-var React = require('react');
-var ReactDOM = require('react-dom'); 
+var React = require('react'); 
+var ReactDOM = require('react-dom');
 
 
 var ContainerMenuPrin = React.createClass({
@@ -13,9 +13,9 @@ var ContainerMenuPrin = React.createClass({
 					        <li><a href="https://www.royalresorts.com/guest-services-and-amenities/">Ofertas Especiales</a></li>
 					        <li><a className="dropdown" href="https://www.royalresorts.com/destinations/" data-activates="dropdown-2">Servicios y Amenidades</a></li>
 					        <li><a href="http://rrsignatureclub.com/">Riviera Maya y Cancun</a></li>
-					        
 
-					        	
+
+
 
 
 					        	<ul id="dropdown-1" className="dropdown-content">
@@ -36,8 +36,8 @@ var ContainerMenuPrin = React.createClass({
 								  <li><a href="http://royalresorts.com.mx/ther-royal-mayan.asp" className="azul-fuerte-diseno-text">Actividades y Deportes</a></li>
 								  <li><a href="http://royalresorts.com.mx/tienda-de-regalos.asp" className="azul-fuerte-diseno-text">Tiendas de Regalos</a></li>
 								  <li><a href="http://royalresorts.com.mx/the-royal-market.asp" className="azul-fuerte-diseno-text">The Royal Market</a></li>
-								</ul>						
-		      					
+								</ul>
+
 				      	</ul>
 					    <ul className="side-nav collapsible" data-collapsible="accordion" id="mobile-demo">
 					        <li>
@@ -51,8 +51,8 @@ var ContainerMenuPrin = React.createClass({
 									  <li><a href="http://royalresorts.com.mx/the-royal-islander.asp" className="azul-fuerte-diseno-text">The Royal Islander®</a></li>
 									  <li><a href="http://grandresidences.com.mx/" className="azul-fuerte-diseno-text">Grand Residences</a></li>
 									  <li><a href="http://www.royalreservations.com/resorts.asp#caribbeanresorts" className="azul-fuerte-diseno-text">Desarrollos en el Caribe</a></li>
-									</ul>									
-								</div> 
+									</ul>
+								</div>
 					        </li>
 					        <li><a href="https://www.royalresorts.com/guest-services-and-amenities/">Ofertas Especiales</a></li>
 					        <li>
@@ -71,7 +71,7 @@ var ContainerMenuPrin = React.createClass({
 					        	</div>
 					        </li>
 					        <li><a href="http://rrsignatureclub.com/">Riviera Maya y Cancun</a></li>
-					       
+
 					    </ul>
 				</div>
             )
@@ -82,21 +82,12 @@ var ContainerMenuPrin = React.createClass({
 var ContainerMenuTop= React.createClass({
     render:function(){
         return <div className="right"><a href="tel:1-888-838-7842" className="black-text"><i className="material-icons left naraja-fuerte-diseno-text">phone</i>1-888-838-7842</a></div>
-	}    
+	}
 });
 
 
 
 
 
-ReactDOM.render(<ContainerMenuPrin />, document.getElementById('navegacion')); 
-ReactDOM.render(<ContainerMenuTop />, document.getElementById('nav-top-menu')); 
-
-
-
-
-
-
-
-
-
+ReactDOM.render(<ContainerMenuPrin />, document.getElementById('navegacion'));
+ReactDOM.render(<ContainerMenuTop />, document.getElementById('nav-top-menu'));

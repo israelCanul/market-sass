@@ -12,6 +12,8 @@
     var close_item_cart=$('.close-item-cart');
     var add_unit_item_cart=$('.action.add-unit-item');
     var remove_unit_item_cart=$('.action.remove-unit-item');
+    var menu_categories=$('.menu-categories');
+    var categoria_productos_especial_gifts=$('.categoria-productos');
 
 
 
@@ -30,6 +32,12 @@
   //inicalizamos el menu mobile
   $(".button-collapse").sideNav({edge:'right'});//inicializar la navegacion
   $("#button-departaments").sideNav();
+  //habilitar los collapsibles de la pagina
+  $('.collapsible').collapsible({
+     accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+   });
+  //se inicializa los select que se usen en la pagina
+  $('select').material_select();
   // declaracion e inicializacion del carousel gallery de la pagina
   $("#owl-demo").owlCarousel({
       slideSpeed : 300,
@@ -51,6 +59,13 @@
       itemsMobile : true, // itemsMobile disabled - inherit from itemsTablet option
       autoPlay:5000,
       pagination:false
+  });
+  $("#owl-special-gifts").owlCarousel({
+    items : 3, //10 items above 1000px browser width
+    itemsDesktop : [1000,3], //5 items between 1000px and 901px
+    itemsDesktopSmall : [900,2], // betweem 900px and 601px
+    itemsTablet: [600,1], //2 items between 600 and 0
+    itemsMobile : true // itemsMobile disabled - inherit from itemsTablet option
   });
 
   submenus();//inicializacion de los submenus
@@ -99,6 +114,31 @@
     if(resultado>-1) input.val(resultado);
   });
 
+  //se hace el handler para la seleccion de las categorias
+  menu_categories.on('click',function(){
+    var categoria=$(this).data('opciones');
+    $('.contenedor-opciones').removeClass('active');
+    $('#'+categoria).toggleClass('active');
+    $('#'+categoria).find('li>a').each(function(a,val){
+      if($(this).hasClass('opcion-prueba')){
+          $(this).html("Opcion "+a+" "+categoria);
+      }
+
+    })
+  });
+
+  // seccion de especial gifts
+  categoria_productos_especial_gifts.on('click',function(e){
+    e.preventDefault();
+    var categoria=$(this).data('categoria');
+
+    $('.wrap-items-categoria').removeClass('active');
+    $('#'+categoria).toggleClass('active');
+
+  });
+
+
+
 });// final del window ready
 
 $(window).on("scroll", function() {
@@ -117,20 +157,13 @@ $(window).on("scroll", function() {
   $(window).resize(function() {
     var ancho=$(window).width();
     if(ancho<601){
-      wrap_items.removeClass('column');
-      wrap_items.addClass('list');
-      action_columns.removeClass('active');
-      action_list.addClass('active');
+        wrap_items.removeClass('column');
+        wrap_items.addClass('list');
+        action_columns.removeClass('active');
+        action_list.addClass('active');
     }
     submenus();
   });
-
-//
-//variables
-//
-
-
-
 
 //
 //Funciones
