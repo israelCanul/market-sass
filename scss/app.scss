@@ -36,3 +36,38 @@ main{
       margin-right: 155px;
     };
 }
+
+.card-panel.sub-menu{
+  padding:5px;
+
+
+  ul.left.contenedor-opciones{
+    word-break:break-all;
+    display: none;
+    &.active{
+      display: none !important;
+      @include tablet{
+        display: inline !important;
+      };
+    }
+    li{
+      display: block;
+      float: left;
+      padding:10px;
+      &:hover{
+        background-color: $gris-borde;
+      }
+      a{
+        color: #000;
+        padding-left: 10px;
+        font-size: 0.8rem;
+        font-family: Oswald,Arial,sans-serif!important;
+        padding: 0 15px;
+
+        @include desktop{
+          font-size: 1rem;
+        };
+      }
+    }
+  }
+}

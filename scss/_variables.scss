@@ -133,3 +133,17 @@ textarea.materialize-textarea:focus:not([readonly]) {
     letter-spacing:2;
   }
 }
+.icon-btn{
+  padding-left: 5px;
+  padding-right:5px;
+  margin-left:0px;
+  &:hover{
+    background-color: $azul-fuerte-diseno;
+    cursor: pointer;
+  }
+}
+.input-search{
+  input{
+    margin-right:0px !important;
+  }
+}

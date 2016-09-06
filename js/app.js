@@ -14,6 +14,8 @@
     var remove_unit_item_cart=$('.action.remove-unit-item');
     var menu_categories=$('.menu-categories');
     var categoria_productos_especial_gifts=$('.categoria-productos');
+    var icon_btn=$('.icon-btn');
+    var input_search=$('.input-search input');
 
 
 
@@ -120,9 +122,9 @@
     $('.contenedor-opciones').removeClass('active');
     $('#'+categoria).toggleClass('active');
     $('#'+categoria).find('li>a').each(function(a,val){
-      if($(this).hasClass('opcion-prueba')){
-          $(this).html("Opcion "+a+" "+categoria);
-      }
+      // if($(this).hasClass('opcion-prueba')){
+      //     $(this).html("Opcion "+a+" "+categoria);
+      // }
 
     })
   });
@@ -136,7 +138,10 @@
     $('#'+categoria).toggleClass('active');
 
   });
-
+  //para el boton de busqueda
+  icon_btn.on('click',function(){
+      input_search.focus();
+  });
 
 
 });// final del window ready
